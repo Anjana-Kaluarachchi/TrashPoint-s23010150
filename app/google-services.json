@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "718658476307",
+    "project_id": "trash-point-s23010150",
+    "storage_bucket": "trash-point-s23010150.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718658476307:android:4a1a471268d081bb2b62e6",
+        "android_client_info": {
+          "package_name": "com.s23010150.trashpoint_v1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmZaCMj1fTVFN64XTCE-tUPhf89o9unDs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

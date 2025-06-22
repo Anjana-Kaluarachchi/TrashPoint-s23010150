@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupWasteType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioPlastic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plastic"/>
+
+        <RadioButton
+            android:id="@+id/radioPolythene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Polythene"/>
+
+        <RadioButton
+            android:id="@+id/radioCardboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardboard"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextOtherWaste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Other Recyclables"/>
+
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weight (kg)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Telephone No"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date to Pickup"/>
+
+    <ImageView
+        android:id="@+id/imageViewPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:background="#DEF0EE"
+        android:contentDescription="Selected Waste Photo"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/buttonAddPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00695C"
+        android:text="Add Photo" />
+
+    <Button
+        android:id="@+id/buttonProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#00695C"
+        android:text="Proceed" />
+</LinearLayout>
