@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -63,12 +64,14 @@ public class ConfirmRequestActivity extends AppCompatActivity {
                         })
                         .addOnFailureListener(e -> {
                             Toast.makeText(ConfirmRequestActivity.this, "Failed to submit request", Toast.LENGTH_SHORT).show();
+                            e.printStackTrace();
                         });
             } else {
                 Toast.makeText(ConfirmRequestActivity.this, "User not authenticated", Toast.LENGTH_SHORT).show();
             }
         });
     }
+
 
     public static class Request {
         private String wasteType;
@@ -80,9 +83,7 @@ public class ConfirmRequestActivity extends AppCompatActivity {
         private String userId;
         private String imageUrl;
 
-
         public Request() {}
-
 
         public Request(String wasteType, String otherWaste, String address, String phone, String date,
                        String status, String userId, String imageUrl) {
@@ -96,8 +97,13 @@ public class ConfirmRequestActivity extends AppCompatActivity {
             this.imageUrl = imageUrl;
         }
 
-
-
+        public String getWasteType() { return wasteType; }
+        public String getOtherWaste() { return otherWaste; }
+        public String getAddress() { return address; }
+        public String getPhone() { return phone; }
+        public String getDate() { return date; }
+        public String getStatus() { return status; }
+        public String getUserId() { return userId; }
+        public String getImageUrl() { return imageUrl; }
     }
 }
-
